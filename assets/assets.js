@@ -107,9 +107,9 @@ export const serviceData = [
 ]
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages', description: 'HTML, CSS, JavaScript React Js, Next Js' },
-    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'B.Tech in Computer Science' },
-    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built more than 5 projects' }
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages and Frameworks', description: 'HTML, CSS, JavaScript, TypeScript, Python, C#, SQL, Java, React Js, Next Js, .NET, Node.js, Tailwind, PostgreSQL, Supabase' },
+    { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Polytechnic University of Timișoara Bachelor’s Degree in Automation and Computer Science (2022 – 2026)' },
+    { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built full-stack and AI-powered projects using React, Next.js, Node.js, .NET, and machine learning, with a strong focus on continuous improvement.' }
 ];
 
 export const toolsData = [
