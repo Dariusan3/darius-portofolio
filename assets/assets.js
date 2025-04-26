@@ -35,6 +35,11 @@ import right_arrow from './right-arrow.png';
 import send_icon from './send-icon.png';
 import right_arrow_bold from './right-arrow-bold.png';
 import right_arrow_bold_dark from './right-arrow-bold-dark.png';
+import postgresql from './postgresql.png';
+import postman from './postman.png';
+import colab from './colab.png';
+import supabase from './supabase.png';
+import teaching from './teaching.png';
 
 export const assets = {
     user_image,
@@ -73,7 +78,12 @@ export const assets = {
     right_arrow,
     send_icon,
     right_arrow_bold,
-    right_arrow_bold_dark
+    right_arrow_bold_dark,
+    postgresql,
+    postman,
+    colab,
+    supabase,
+    teaching,
 };
 
 export const workData = [
@@ -100,18 +110,38 @@ export const workData = [
 ]
 
 export const serviceData = [
-    { icon: assets.web_icon, title: 'Web design', description: 'Web development is the process of building, programming...', link: '' },
-    { icon: assets.mobile_icon, title: 'Mobile app', description: 'Mobile app development involves creating software for mobile devices...', link: '' },
-    { icon: assets.ui_icon, title: 'UI/UX design', description: 'UI/UX design focuses on creating a seamless user experience...', link: '' },
-    { icon: assets.graphics_icon, title: 'Graphics design', description: 'Creative design solutions to enhance visual communication...', link: '' },
-]
+    {
+      icon: assets.web_icon,
+      title: 'Web Design & Development',
+      description: 'I specialize in creating modern, responsive websites using the latest web technologies, including JavaScript, React, and Next.js. My goal is to build visually appealing and functional websites that provide an excellent user experience.',
+      link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo, e.g., a portfolio or web-related project
+    },
+    {
+      icon: assets.mobile_icon,
+      title: 'Mobile App Development',
+      description: 'I develop cross-platform mobile applications for both iOS and Android using frameworks like Flutter and React Native. My focus is on performance, usability, and delivering a seamless experience for users on mobile devices.',
+      link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo, e.g., mobile app project
+    },
+    {
+      icon: assets.ui_icon,
+      title: 'UI/UX Design',
+      description: 'I focus on creating user interfaces and experiences that are both functional and aesthetically pleasing. By applying principles of design and usability, I ensure the final product is intuitive and meets user needs.',
+      link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo, e.g., UI/UX project or designs
+    },
+    {
+        icon: assets.teaching,
+        title: 'Programming Instructor',
+        description: 'I teach programming to others, covering topics like algorithms and various programming subjects. I aim to make complex concepts easy to understand and help learners build strong coding skills.',
+        link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo if applicable
+    },
+];
 
 export const infoList = [
-    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages and Frameworks', description: 'HTML, CSS, JavaScript, TypeScript, Python, C#, SQL, Java, React Js, Next Js, .NET, Node.js, Tailwind, PostgreSQL, Supabase' },
+    { icon: assets.code_icon, iconDark: assets.code_icon_dark, title: 'Languages and Frameworks', description: 'HTML, CSS, JavaScript, TypeScript, Python, C#, SQL, Java, Dart, React Js, Next Js, .NET, Node.js, Flutter, Tailwind, PostgreSQL, MongoDB, Supabase, Firebase' },
     { icon: assets.edu_icon, iconDark: assets.edu_icon_dark, title: 'Education', description: 'Polytechnic University of Timișoara Bachelor’s Degree in Automation and Computer Science (2022 – 2026)' },
     { icon: assets.project_icon, iconDark: assets.project_icon_dark, title: 'Projects', description: 'Built full-stack and AI-powered projects using React, Next.js, Node.js, .NET, and machine learning, with a strong focus on continuous improvement.' }
 ];
 
 export const toolsData = [
-    assets.vscode, assets.firebase, assets.mongodb, assets.figma, assets.git
+    assets.vscode, assets.figma, assets.git, assets.postman, assets.colab, assets.firebase, assets.mongodb, assets.supabase,assets.postgresql
 ];
