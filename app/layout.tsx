@@ -30,7 +30,9 @@ export default function RootLayout({
         className={`${outfit.variable} ${ovo.variable} antialiased leading-8
         overflow-x-hidden`}
       >
-        {children}
+        <div id="theme-wrapper">
+          {children}
+        </div>
       </body>
     </html>
   );

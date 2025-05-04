@@ -1,22 +1,48 @@
 import { assets, workData } from '@/assets/assets'
 import Image from 'next/image'
 import React from 'react'
+import { motion } from "framer-motion"
 
-const Work = () => {
+const Work = ({isDarkMode} : any) => {
   return (
-    <div id='work' className='w-full px-[12%] py-20 scroll-mt-20'>
-        <h4 className='text-center mb-2 text-lg font-Ovo'>My portofolio</h4>
-        <h2 className='text-center text-5xl font-Ovo'>My latest work</h2>
+    <motion.div 
+    initial={{opacity: 0}}
+    whileInView={{opacity: 1}}
+    transition={{duration: 1}}
+    id='work' 
+    className='w-full px-[12%] py-20 scroll-mt-20'>
+        <motion.h4 
+        initial={{opacity: 0, y: -20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5, delay: 0.3}}
+        className='text-center mb-2 text-lg font-Ovo'>My portofolio</motion.h4>
+        <motion.h2 
+        initial={{opacity: 0, y: -20}}
+        whileInView={{opacity: 1, y: 0}}
+        transition={{duration: 0.5, delay: 0.5}}
+        className='text-center text-5xl font-Ovo'>My latest work</motion.h2>
 
-        <p className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
+        <motion.p 
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 0.5, delay: 0.7}}
+        className='text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo'>
             Welcome to my portfolio! 
             Here you'll find a collection of my latest projects, 
             showcasing my skills and expertise in web development and app development.
-        </p>
+        </motion.p>
 
-        <div className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5'>
+        <motion.div 
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 0.6, delay: 0.9}}
+        className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5
+        dark-text-black'>
             {workData.map((project, index) => (
-                <div key={index} 
+                <motion.div 
+                whileHover={{scale: 1.05}}
+                transition={{duration: 0.3}}
+                key={index} 
                 className='aspect-square bg-no-repeat bg-cover bg-center rounded-lg relative
                 cursor-pointer group'
                 style={{backgroundImage: `url(${project.bgImage})`}}>
@@ -26,22 +52,27 @@ const Work = () => {
                             <h2 className='font-semibold'>{project.title}</h2>
                             <p className='text-sm text-gray-700'>{project.description}</p>
                         </div>
-                        <div className='border rounde-full border-black w-9 aspect-square flex items-center
+                        <div className='border rounded-full border-black w-9 aspect-square flex items-center
                         justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
                             <Image src={assets.send_icon} alt='send_icon' 
                             className='w-5'/>
                         </div>
                     </div>
-                </div>
+                </motion.div>
             ))}
-        </div>
+        </motion.div>
 
-        <a href='' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]
-        border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500'>
-            Show more <Image src={assets.right_arrow_bold} alt="right_arrrow_bold" className='w-4'/>
-        </a>
+        <motion.a 
+        initial={{opacity: 0}}
+        whileInView={{opacity: 1}}
+        transition={{duration: 0.5, delay: 1.1}}
+        href='' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]
+        border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark-text-white
+        dark-border-white hover-dark-hover'>
+            Show more <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="right_arrrow_bold" className='w-4'/>
+        </motion.a>
 
-    </div>
+    </motion.div>
   )
 }
 

@@ -1,4 +1,5 @@
 const config = {
+  darkMode: 'selector',
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -22,6 +23,7 @@ const config = {
     }
   },
   plugins: ["@tailwindcss/postcss"],
+  darkMode: 'class',
 };
 
 export default config;

@@ -11,3 +11,74 @@
 .lightHover {
   background-color: #fcf4ff;
 }
+
+.dark {
+  background-color: #11001F;
+  color: white;
+}
+
+.dark .header-bg {
+  display: none;
+}
+
+.dark .shadow-white-20 {
+  box-shadow: 0 4px 6px -1px rgba(255, 255, 255, 0.2),
+              0 2px 4px -2px rgba(255, 255, 255, 0.2);
+}
+
+.dark .dark-bg-custom {
+  background-color: #11001F;
+}
+
+.dark .dark-hover {
+  background-color: "#2A004A",
+}
+
+.dark .hover-dark-hover-30 {
+  background-color: rgba(42, 0, 74, 0.3); /* #2A004A with 30% opacity */
+}
+
+.dark .dark-transparent {
+  background: transparent;
+}
+
+.dark .dark-border-white {
+  border-color: white;
+}
+
+.dark .dark-border-width-0-5px {
+  border-width: 0.5px;
+}
+
+.dark .dark-border-white-90 {
+  border-color: rgba(255, 255, 255, 0.9); /* #FFFFFF with 90% opacity */
+}
+
+.dark .hover-shadow-white:hover {
+  box-shadow: 4px 4px 0 #fff;
+}
+
+.dark .hover-dark-hover-50:hover {
+  background-color: rgba(42, 0, 74, 0.5); /* #2A004A with 50% opacity */
+}
+
+.dark .hover-dark-hover:hover {
+  background-color: #2a004a;
+}
+
+.dark .dark-text-white {
+  color: white;
+}
+
+.dark .dark-text-black {
+  color: black;
+}
+
+.dark .dark-text-white-80 {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+
+.dark .dark-bg-none {
+  background: none;
+}
