@@ -39,7 +39,7 @@ const Work = ({isDarkMode} : any) => {
         className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5
         dark-text-black'>
             {workData.map((project, index) => (
-            <a target='_blank' href={project.link}>
+            <a target='_blank' href={project.link} key={index}>
                 <motion.div 
                 whileHover={{scale: 1.05}}
                 transition={{duration: 0.3}}

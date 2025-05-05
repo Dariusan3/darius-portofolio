@@ -108,11 +108,11 @@ export const workData = [
         link: 'https://stockvision-ai.streamlit.app/'
     },
     {
-        title: 'UI/UX designing',
-        description: 'UI/UX Design',
+        title: 'AI Code Review Agent',
+        description: 'AI Solution',
         bgImage: '/work-4.png',
-         link: 'URL_ADDRESS.com/Dariusan3?tab=repositories'
-    },
+        link: 'https://ai-code-review-agent-gilt.vercel.app/'
+    }
 ]
 
 export const serviceData = [
@@ -120,25 +120,25 @@ export const serviceData = [
       icon: assets.web_icon,
       title: 'Web Design & Development',
       description: 'I specialize in creating modern, responsive websites using the latest web technologies, including JavaScript, React, and Next.js. My goal is to build visually appealing and functional websites that provide an excellent user experience.',
-      link: 'https://github.com/Dariusan3?tab=repositories'
+      link: 'https://github.com/Dariusan3'
     },
     {
       icon: assets.mobile_icon,
       title: 'Mobile App Development',
       description: 'I develop cross-platform mobile applications for both iOS and Android using frameworks like Flutter and React Native. My focus is on performance, usability, and delivering a seamless experience for users on mobile devices.',
-      link: 'https://github.com/Dariusan3?tab=repositories'
+      link: 'https://github.com/Dariusan3'
     },
     {
         icon: assets.ai_icon,
         title: 'Artificial Intelligence Solutions',
         description: 'I develop intelligent systems that leverage machine learning, natural language processing, and data-driven algorithms to solve real-world problems and enhance digital experiences.',
-        link: 'https://github.com/Dariusan3?tab=repositories'
+        link: 'https://github.com/Dariusan3'
     },
     {
         icon: assets.teaching,
         title: 'Programming Instructor',
         description: 'I teach programming to others, covering topics like algorithms and various programming subjects. I aim to make complex concepts easy to understand and help learners build strong coding skills.',
-        link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo if applicable
+        link: 'https://github.com/Dariusan3'
     },
 ];
 
