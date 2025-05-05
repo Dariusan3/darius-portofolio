@@ -40,6 +40,7 @@ import postman from './postman.png';
 import colab from './colab.png';
 import supabase from './supabase.png';
 import teaching from './teaching.png';
+import ai_icon from './ai-icon.png';
 
 export const assets = {
     user_image,
@@ -84,6 +85,7 @@ export const assets = {
     colab,
     supabase,
     teaching,
+    ai_icon,
 };
 
 export const workData = [
@@ -91,21 +93,25 @@ export const workData = [
         title: 'Frontend project',
         description: 'Web Design',
         bgImage: '/work-1.png',
+        link: 'https://returnbox.netlify.app/'
     },
     {
         title: 'Meals app',
         description: 'Mobile App',
         bgImage: '/work-2.png',
+        link: 'https://mealsapp-df00e.web.app/'
     },
     {
-        title: 'Photography site',
-        description: 'Web Design',
+        title: 'AI Stock Predictor',
+        description: 'AI Solution',
         bgImage: '/work-3.png',
+        link: 'https://stockvision-ai.streamlit.app/'
     },
     {
         title: 'UI/UX designing',
         description: 'UI/UX Design',
         bgImage: '/work-4.png',
+         link: 'URL_ADDRESS.com/Dariusan3?tab=repositories'
     },
 ]
 
@@ -114,19 +120,19 @@ export const serviceData = [
       icon: assets.web_icon,
       title: 'Web Design & Development',
       description: 'I specialize in creating modern, responsive websites using the latest web technologies, including JavaScript, React, and Next.js. My goal is to build visually appealing and functional websites that provide an excellent user experience.',
-      link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo, e.g., a portfolio or web-related project
+      link: 'https://github.com/Dariusan3?tab=repositories'
     },
     {
       icon: assets.mobile_icon,
       title: 'Mobile App Development',
       description: 'I develop cross-platform mobile applications for both iOS and Android using frameworks like Flutter and React Native. My focus is on performance, usability, and delivering a seamless experience for users on mobile devices.',
-      link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo, e.g., mobile app project
+      link: 'https://github.com/Dariusan3?tab=repositories'
     },
     {
-      icon: assets.ui_icon,
-      title: 'UI/UX Design',
-      description: 'I focus on creating user interfaces and experiences that are both functional and aesthetically pleasing. By applying principles of design and usability, I ensure the final product is intuitive and meets user needs.',
-      link: 'https://github.com/Dariusan3?tab=repositories' // Link to a relevant GitHub repo, e.g., UI/UX project or designs
+        icon: assets.ai_icon,
+        title: 'Artificial Intelligence Solutions',
+        description: 'I develop intelligent systems that leverage machine learning, natural language processing, and data-driven algorithms to solve real-world problems and enhance digital experiences.',
+        link: 'https://github.com/Dariusan3?tab=repositories'
     },
     {
         icon: assets.teaching,

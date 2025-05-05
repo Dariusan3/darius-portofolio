@@ -39,6 +39,7 @@ const Work = ({isDarkMode} : any) => {
         className='grid grid-cols-[repeat(auto-fit,_minmax(200px,_1fr))] my-10 gap-5
         dark-text-black'>
             {workData.map((project, index) => (
+            <a target='_blank' href={project.link}>
                 <motion.div 
                 whileHover={{scale: 1.05}}
                 transition={{duration: 0.3}}
@@ -54,11 +55,14 @@ const Work = ({isDarkMode} : any) => {
                         </div>
                         <div className='border rounded-full border-black w-9 aspect-square flex items-center
                         justify-center shadow-[2px_2px_0_#000] group-hover:bg-lime-300 transition'>
-                            <Image src={assets.send_icon} alt='send_icon' 
-                            className='w-5'/>
+                           
+                                <Image src={assets.send_icon} alt='send_icon' 
+                                className='w-5'/>
+                    
                         </div>
                     </div>
                 </motion.div>
+            </a>
             ))}
         </motion.div>
 
@@ -66,7 +70,9 @@ const Work = ({isDarkMode} : any) => {
         initial={{opacity: 0}}
         whileInView={{opacity: 1}}
         transition={{duration: 0.5, delay: 1.1}}
-        href='' className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]
+        target='_blank'
+        href='https://github.com/Dariusan3?tab=repositories' 
+        className='w-max flex items-center justify-center gap-2 text-gray-700 border-[0.5px]
         border-gray-700 rounded-full py-3 px-10 mx-auto my-20 hover:bg-[#fcf4ff] duration-500 dark-text-white
         dark-border-white hover-dark-hover'>
             Show more <Image src={isDarkMode ? assets.right_arrow_bold_dark : assets.right_arrow_bold} alt="right_arrrow_bold" className='w-4'/>
